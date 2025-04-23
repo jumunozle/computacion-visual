@@ -40,8 +40,9 @@ Se traslada en una trayectoria circular usando Math.sin y Math.cos, y rota sobre
 Se escala dinámicamente con una función senoidal basada en el tiempo (Math.sin(clock.elapsedTime)), se aplicaron OrbitControls para permitir al usuario navegar la escena con el mouse.
 
 
+![Untitled ‑ Made with FlexClip](https://github.com/user-attachments/assets/bf09d34a-542a-416d-a6e5-5cad69d633e2)
 
-![threejs](https://github.com/user-attachments/assets/6c6225f7-93a8-4ba6-b27d-30d1e157761c)
+
 
 Processing 
 
@@ -53,4 +54,6 @@ El cubo:
 -Cambia de tamaño de forma cíclica usando una función sin() para escalarlo dinámicamente.
 
 
-![processing](https://github.com/user-attachments/assets/7937bee4-87de-4717-89fe-845feba33dd0)
+![Untitled ‑ Made with FlexClip (1)](https://github.com/user-attachments/assets/605d55ca-1310-47be-aa80-33c7a8590bdd)
+
+
