@@ -90,6 +90,7 @@ for i, cnt in enumerate(contours):
 
 ![analisis_figuras_geometrias_munoz](https://github.com/user-attachments/assets/fbf897a1-1e05-4d51-b25c-a760a86f2099)
 
+https://colab.research.google.com/drive/1qgeuTn0dYsLiu0JX9lYdbwO4RWGdVD-5?usp=sharing
 ---
 
 ## 🧩 Prompts Usados
