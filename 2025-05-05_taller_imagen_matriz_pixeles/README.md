@@ -1,4 +1,4 @@
-# 🧪 Taller de Procesamiento de Imágenes con OpenCV y NumPy
+# 🧪 Taller De Pixels a Coordenadas
 
 ## 📅 Fecha  
 2025-05-05
@@ -27,14 +27,13 @@ Explorar técnicas básicas de procesamiento de imágenes digitales utilizando P
 - 📦 Librerías: `opencv-python`, `numpy`, `matplotlib`
 
 ---
-
+```
 ## 📁 Estructura del Proyecto
-2025-05-05_taller_opencv/
-├── colab/ # Notebook ejecutado en Google Colab
-├── datos/ # image.png
-├── resultados/ # capturas de imágenes modificadas, histograma, gif
+2025-05-05_taller_iamgen_matriz_pixeles/
+├── python/
+├── resultados/
 ├── README.md
-
+```
 ---
 
 ## 🧪 Implementación
@@ -50,24 +49,23 @@ Explorar técnicas básicas de procesamiento de imágenes digitales utilizando P
 ### 🔹 Código relevante
 
 ```python
-# Ajuste de brillo y contraste con OpenCV
-alpha = 1.2  # Contraste
-beta = 30    # Brillo
-
-adjusted = cv2.convertScaleAbs(image_rgb, alpha=alpha, beta=beta)
-plt.imshow(adjusted)
-plt.title("Ajuste con OpenCV")
-plt.axis('off')
-plt.show()
 
 ```
+#Cargar imagen en color
+image = cv2.imread('image.png') 
+image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)  # Convertir de BGR a RGB
 
+# Separar canales RGB
+R, G, B = cv2.split(image_rgb)
+
+# Convertir a HSV y separar canales
+image_hsv = cv2.cvtColor(image_rgb, cv2.COLOR_RGB2HSV)
+H, S, V = cv2.split(image_hsv)
 ---
 
 ## 📊 Resultados Visuales
 
-
-
+![taller_imagen_matriz_munoz](https://github.com/user-attachments/assets/b091ea1a-02e2-448a-b291-76f285d8ce6b)
 
 ---
 
@@ -98,7 +96,7 @@ La parte más interesante fue la manipulación de regiones por slicing, ya que m
 
 - [x] Carpeta `2025-05-05_taller_imagen_matriz_pixeles`
 - [x] Código limpio y funcional
-- [x] GIF incluido con nombre descriptivo (si el taller lo requiere)
+- [x] GIF incluido con nombre descriptivo
 - [x] Visualizaciones o métricas exportadas
 - [x] README completo y claro
 - [x] Commits descriptivos en inglés
