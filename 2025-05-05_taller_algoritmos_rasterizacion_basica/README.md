@@ -1,5 +1,4 @@
-# 🧪 Nombre del Taller
-Rasterización de Figuras Geométricas con Algoritmos Clásicos
+# 🧪 Rasterizacion desde Cero
 
 ## 📅 Fecha
 2025-05-05
@@ -29,13 +28,15 @@ Explorar e implementar algoritmos clásicos de rasterización para generar gráf
 ---
 
 ## 📁 Estructura del Proyecto
-
-2025-05-05_rasterizacion/
-├── entorno/ # python/
-├── datos/ # imágenes generadas (opcional)
-├── resultados/ # capturas .png, .gif del renderizado
+```
+2025-05-05_taller_algoritmos_rasterizacion_basica/
+├── python/
+├── resultados/
+│   ├── linea.png
+│   ├── circulo.png
+│   ├── triangulo.png
 ├── README.md
-
+```
 ---
 
 ## 🧪 Implementación
@@ -46,35 +47,16 @@ Explorar e implementar algoritmos clásicos de rasterización para generar gráf
 3. Visualización final con Matplotlib.
 4. Posibilidad de guardar las imágenes generadas.
 
-### 🔹 Código relevante
-
-```python
-# Dibujar una línea con el algoritmo de Bresenham
-def bresenham(x0, y0, x1, y1):
-    dx = abs(x1 - x0)
-    dy = abs(y1 - y0)
-    sx = 1 if x0 < x1 else -1
-    sy = 1 if y0 < y1 else -1
-    err = dx - dy
-    while True:
-        pixels[x0, y0] = (255, 0, 0)
-        if x0 == x1 and y0 == y1:
-            break
-        e2 = 2 * err
-        if e2 > -dy:
-            err -= dy
-            x0 += sx
-        if e2 < dx:
-            err += dx
-            y0 += sy
-```
 ---
 
 ## 📊 Resultados Visuales
+![Circulo](https://github.com/user-attachments/assets/02017e8c-4f49-45f2-8a1e-5212217efcde)
 
+![Linea](https://github.com/user-attachments/assets/a088dcb0-be42-4378-b7e3-6654669283ec)
 
+![Triangulo](https://github.com/user-attachments/assets/b105364b-6e4e-49c6-9980-fb05251e7683)
 
-
+![Figuras juntas](https://github.com/user-attachments/assets/f7e93fe5-d22c-4b11-9b09-5a4236222129)
 ---
 
 ---
@@ -89,7 +71,7 @@ Los métodos difieren en su propósito y eficiencia. Bresenham y el círculo de 
 
 - [x] Carpeta `2025-05-05_taller_algoritmos_rasterizacion_basica`
 - [x] Código limpio y funcional
-- [x] GIF incluido con nombre descriptivo (si el taller lo requiere)
+- [x] GIF incluido con nombre descriptivo
 - [x] Visualizaciones o métricas exportadas
 - [x] README completo y claro
 - [x] Commits descriptivos en inglés
