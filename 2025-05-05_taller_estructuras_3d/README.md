@@ -68,13 +68,39 @@ Explorar la visualización dinámica de estructuras geométricas 3D mediante Rea
 ### 🔹 Código relevante
 
 ```jsx
-<Canvas camera={{ position: [0, 0, 5] }}>
-  <ambientLight />
-  <Suspense fallback={null}>
-    <ModelViewer mode={mode} />
-  </Suspense>
-  <OrbitControls />
-</Canvas>
+const obj = useLoader(OBJLoader, "/model.obj");
+
+  return (
+    <group>
+      {obj.children.map((child, i) => {
+        const geometry = child.geometry;
+
+        return (
+          <group key={i}>
+            {mode === "faces" && (
+              <mesh geometry={geometry}>
+                <meshStandardMaterial color="orange" />
+              </mesh>
+            )}
+
+            {mode === "edges" && (
+              <mesh geometry={geometry}>
+                <meshStandardMaterial color="black" wireframe />
+                <Edges scale={1.05} color="black" />
+              </mesh>
+            )}
+
+            {mode === "vertices" && (
+              <points geometry={geometry}>
+                <pointsMaterial size={0.02} color="red" />
+              </points>
+            )}
+          </group>
+        );
+      })}
+    </group>
+  );
+}
 ```
 
 ---
