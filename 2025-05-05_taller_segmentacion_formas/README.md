@@ -86,7 +86,7 @@ for cnt in contours:
 ## 📊 Resultados Visuales
 
 ```markdown
-![deteccion](./resultados/segmentacion_formas_munoz.gif)
+![deteccion](/resultados/segmentacion_formas_munoz.gif)
 ```
 
 ---
@@ -100,15 +100,11 @@ for cnt in contours:
 ```
 
 ---
-
 ## 💬 Reflexión Final
 
 Este taller permitió reforzar el uso práctico de OpenCV para segmentación y análisis de formas básicas. Fue interesante observar cómo distintos métodos de umbralado afectan los resultados de la detección de contornos. Además, el uso de momentos para encontrar el centro de masa dio un enfoque más analítico al problema.
-
 La parte más compleja fue ajustar correctamente los parámetros del umbral adaptativo para obtener segmentaciones limpias. En futuros proyectos, se podría mejorar este análisis combinándolo con aprendizaje automático o redes neuronales para segmentaciones más robustas.
 ---
-
-
 ## ✅ Checklist de Entrega
 
 - [x] Carpeta `2025-05-05_taller_segmentacion_formas`
@@ -117,5 +113,4 @@ La parte más compleja fue ajustar correctamente los parámetros del umbral adap
 - [x] Visualizaciones o métricas exportadas
 - [x] README completo y claro
 - [x] Commits descriptivos en inglés
-
 ---
