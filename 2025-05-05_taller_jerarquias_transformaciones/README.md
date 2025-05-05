@@ -35,10 +35,9 @@ Aplicar estructuras jerárquicas y árboles de transformación para organizar es
 
 ## 📁 Estructura del Proyecto
 
-2025-05-05_transformaciones-r3f/
-├── entorno/ # threejs/
-├── datos/ # (no se usaron archivos externos)
-├── resultados/ # capturas, gifs
+2025-05-05_taller_jerarquias_transformaciones/
+├── threejs
+├── resultados
 ├── README.md
 
 ---
@@ -103,8 +102,7 @@ export default function Scene() {
 
 ## 📊 Resultados Visuales
 
-### 📌 Este taller **requiere explícitamente un GIF animado**:
-
+![jerarquias_munoz](https://github.com/user-attachments/assets/d7a59fa7-0f04-425a-892f-418f36eaa334)
 
 ---
 
