@@ -77,12 +77,12 @@ mesh_gltf.export("convertido.stl")     # A STL
 
 ## 🧩 Prompts Usados
 
-``text
+```text
 Cargar modelos en formatos .OBJ, .STL, .GLTF con trimesh 
 Comparar cantidad de vértices, caras, normales, y si hay duplicados.
 Visualizar cada modelo y sus propiedades.
 Realizar conversiones entre formatos usando trimesh.exchange o assimp.
-``
+```
 ---
 
 ## 🧪 Implementación Threejs
