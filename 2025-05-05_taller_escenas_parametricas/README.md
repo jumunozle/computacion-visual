@@ -89,6 +89,7 @@ o3d.io.write_triangle_mesh("scene_open3d.obj", scene_o3d)
 ## 📊 Resultados Visuales
 
 ![escenas_p_python_munoz](https://github.com/user-attachments/assets/69a741a0-d889-4403-8376-945646261d0a)
+https://colab.research.google.com/drive/1nFw2rBtYNzQLjcS1rcsSnbgePzu2i0kM?usp=sharing
 
 ---
 
