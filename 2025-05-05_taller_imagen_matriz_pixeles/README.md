@@ -27,8 +27,9 @@ Explorar técnicas básicas de procesamiento de imágenes digitales utilizando P
 - 📦 Librerías: `opencv-python`, `numpy`, `matplotlib`
 
 ---
-```
+
 ## 📁 Estructura del Proyecto
+```
 2025-05-05_taller_iamgen_matriz_pixeles/
 ├── python/
 ├── resultados/
@@ -49,18 +50,17 @@ Explorar técnicas básicas de procesamiento de imágenes digitales utilizando P
 ### 🔹 Código relevante
 
 ```python
-
-```
 #Cargar imagen en color
 image = cv2.imread('image.png') 
 image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)  # Convertir de BGR a RGB
-
 # Separar canales RGB
 R, G, B = cv2.split(image_rgb)
 
 # Convertir a HSV y separar canales
 image_hsv = cv2.cvtColor(image_rgb, cv2.COLOR_RGB2HSV)
 H, S, V = cv2.split(image_hsv)
+```
+
 ---
 
 ## 📊 Resultados Visuales
