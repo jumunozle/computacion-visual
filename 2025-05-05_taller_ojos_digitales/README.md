@@ -99,7 +99,7 @@ La parte más interesante fue la detección de bordes con Sobel y Laplaciano, es
 
 - [x] Carpeta `2025-05-05_taller_ojos_digitales`
 - [x] Código limpio y funcional
-- [x] GIF incluido con nombre descriptivo (si el taller lo requiere)
+- [x] GIF incluido con nombre descriptivo
 - [x] Visualizaciones o métricas exportadas
 - [x] README completo y claro
 - [x] Commits descriptivos en inglés
