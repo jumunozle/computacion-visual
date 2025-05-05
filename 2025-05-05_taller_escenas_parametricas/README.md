@@ -6,7 +6,7 @@
 
 ## 🎯 Objetivo del Taller
 
-El objetivo de este taller es explorar la creación de figuras geométricas 3D (esferas, cubos, cilindros) en posiciones aleatorias en el espacio 3D, y luego exportarlas en formatos comunes como `.obj`, `.stl`, `.glb` y `.ply` utilizando herramientas como **vedo**, **trimesh** y **open3d**. Se busca trabajar con colores y transformaciones de las figuras de forma aleatoria, lo que permite una visualización variada de la escena generada.
+El objetivo de este taller es explorar la creación de figuras geométricas 3D (esferas, cubos, cilindros) en posiciones aleatorias en el espacio 3D, y luego exportarlas en formatos comunes como `.obj`, `.stl`, `.glb` utilizando herramientas como **vedo**, **trimesh** y **open3d**. Se busca trabajar con colores y transformaciones de las figuras de forma aleatoria, lo que permite una visualización variada de la escena generada.
 
 ---
 
