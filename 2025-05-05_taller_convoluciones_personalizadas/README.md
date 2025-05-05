@@ -1,4 +1,4 @@
-# 🧪 Taller de Convolución Manual y Comparativa con OpenCV
+# 🧪 Convoluciones Personalizadas
 
 ## 📅 Fecha
 2025-05-05
@@ -30,13 +30,12 @@ Explorar e implementar manualmente la operación de convolución 2D en imágenes
 ---
 
 ## 📁 Estructura del Proyecto
-
-2025-05-05_convolucion_manual_opencv/
-├── entorno/ # colab/
-├── datos/ # tu_imagen.jpg
-├── resultados/ # comparaciones.png, esquinas.gif
+```
+2025-05-05_convoluciones_personalizadas/
+├── python/
+├── resultados/
 ├── README.md
-
+```
 ---
 
 ## 🧪 Implementación
@@ -74,20 +73,19 @@ corner_response = np.clip(np.abs(Ixy) / np.max(np.abs(Ixy)) * 255, 0, 255).astyp
 
 ## 📊 Resultados Visuales
 
-### 📌 Este taller **requiere explícitamente un GIF animado**:
-
+![convoluciones_python_munoz](https://github.com/user-attachments/assets/e1b38f00-3dea-4c40-a658-d9acd7e5e593)
 
 ---
 
 ## 🧩 Prompts Usados
 
-``text
+```text
 - Cargar una imagen en escala de grises.
 - Implementar manualmente una convolución 2D desde cero con NumPy.
 - Diseñar y aplicar 3 kernels: sharpening, blur y esquinas (Sobel + derivadas cruzadas).
 - Comparar visualmente con cv2.filter2D().
 - Mostrar imágenes en paralelo.
-``
+```
 
 ---
 
@@ -102,7 +100,7 @@ La parte más interesante fue la detección de esquinas utilizando derivadas cru
 
 - [x] Carpeta `2025-05-05_taller_convoluciones_personalizadas`
 - [x] Código limpio y funcional
-- [x] GIF incluido con nombre descriptivo (si el taller lo requiere)
+- [x] GIF incluido con nombre descriptivo
 - [x] Visualizaciones o métricas exportadas
 - [x] README completo y claro
 - [x] Commits descriptivos en inglés
