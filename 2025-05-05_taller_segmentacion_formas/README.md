@@ -1,6 +1,6 @@
-# 🧪 Nombre del Taller
+# 🧪 Taller
 
-**Segmentación y Análisis de Formas con OpenCV**
+**Taller segmentacion formas**
 
 ## 📅 Fecha
 2025-05-05 
@@ -42,10 +42,9 @@ Matplotlib
 ## 📁 Estructura del Proyecto
 
 ```
-2025-05-05_segmentacion_opencv/
-├── entorno/               # colab/
-├── datos/                 # image.png
-├── resultados/            # contornos.png, gif_segmentacion.gif
+2025-05-05_taller_segmentacion_formas/
+├── python/  
+├── resultados/  
 ├── README.md
 
 ```
@@ -70,20 +69,6 @@ Visualización de resultados con Matplotlib.
 ### 🔹 Código relevante
 
 ```python
-# Cargar imagen y convertir a escala de grises
-img_gray = cv2.imread('image.png', cv2.IMREAD_GRAYSCALE)
-
-# Umbral fijo
-_, binary_fixed = cv2.threshold(img_gray, 127, 255, cv2.THRESH_BINARY)
-
-# Umbral adaptativo
-binary_adaptive = cv2.adaptiveThreshold(
-    img_gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, 
-    cv2.THRESH_BINARY, 11, 2)
-
-# Detectar contornos
-contours, _ = cv2.findContours(binary_fixed, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-
 # Dibujar contornos, centros de masa y bounding boxes
 for cnt in contours:
     cv2.drawContours(img_contours, [cnt], -1, (0,255,0), 2)
@@ -100,8 +85,9 @@ for cnt in contours:
 
 ## 📊 Resultados Visuales
 
-
-
+```markdown
+![deteccion](./resultados/segmentacion_formas_munoz.gif)
+```
 
 ---
 
@@ -109,9 +95,7 @@ for cnt in contours:
 
 ```text
 "Cargar imagen en escala de grises y aplicar umbral fijo y adaptativo con OpenCV"
-
 "Detectar contornos y calcular centros de masa"
-
 "Cómo dibujar bounding boxes y calcular área y perímetro en Python"
 ```
 
