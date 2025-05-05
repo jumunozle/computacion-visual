@@ -94,9 +94,9 @@ o3d.io.write_triangle_mesh("scene_open3d.obj", scene_o3d)
 
 ## 🧩 Prompts Usados
 
-``text
+```text
 Generar un conjunto de figuras 3D aleatorias (esferas, cubos, cilindros) con colores aleatorios en diferentes posiciones del espacio 3D.
-``
+```
 ---
 
 ## 🧪 Implementación Threejs
@@ -144,7 +144,7 @@ Generar un conjunto de figuras 3D aleatorias (esferas, cubos, cilindros) con col
 
 ## 🧩 Prompts Usados
 
-``text
+```text
 "Three.js con React Three Fiber: crear una escena y mapear un array de objetos 3D."
 
 "Usar map() y condicionales para representar estructuras adaptativas."
@@ -152,7 +152,7 @@ Generar un conjunto de figuras 3D aleatorias (esferas, cubos, cilindros) con col
 "Usar leva para controlar los parámetros dinámicamente desde la interfaz."
 
 "Quiero que giren todas cuando yo mueva la barra de rotación."
-``
+```
 ---
 ## 💬 Reflexión Final
 
