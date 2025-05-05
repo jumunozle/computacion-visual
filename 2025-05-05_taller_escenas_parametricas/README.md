@@ -1,8 +1,7 @@
-# 🧪 Nombre del Taller
+# 🧪 Escenas parametricas
 
 ## 📅 Fecha
-2025-05-05 – Fecha de entrega o realización
-
+2025-05-05
 ---
 
 ## 🎯 Objetivo del Taller
@@ -26,7 +25,7 @@ El objetivo de este taller es explorar la creación de figuras geométricas 3D (
 - **Bibliotecas**:
   - **vedo**: Para crear y visualizar objetos 3D.
   - **trimesh**: Para manipulación y exportación de mallas 3D.
-  - **open3d**: Para operaciones avanzadas en geometría 3D y exportación a formato `.ply`.
+  - **open3d**: Para operaciones avanzadas en geometría 3D y exportación a formatos 3d
   - React con Vite
 - @react-three/fiber
 - @react-three/drei
@@ -37,10 +36,10 @@ El objetivo de este taller es explorar la creación de figuras geométricas 3D (
 
 ## 📁 Estructura del Proyecto
 
-2025-05-05_nombre_taller/
-├── entorno/               # python/, colab/
-├── datos/                 # imágenes, modelos 3D generados
-├── resultados/            # capturas, métricas, gifs
+2025-05-05_taller_escenas_parametricos/
+├── python/
+├── threejs/               
+├── resultados/         
 ├── README.md
 
 ---
@@ -51,16 +50,11 @@ El objetivo de este taller es explorar la creación de figuras geométricas 3D (
 1. **Generación de puntos aleatorios** en el espacio 3D utilizando `numpy`.
 2. **Creación de figuras geométricas** (esferas, cubos, cilindros) en esos puntos con tamaño, color y forma aleatoria.
 3. **Aplicación de transformaciones** para colocar y colorear las figuras.
-4. **Exportación** de la escena 3D generada a formatos `.obj`, `.stl`, `.glb` y `.ply` usando las bibliotecas mencionadas.
+4. **Exportación** de la escena 3D generada a formatos `.obj`, `.stl`, `.glb` usando las bibliotecas mencionadas.
 
 ### 🔹 Código relevante
 
 ```python
-import numpy as np
-import vedo
-import trimesh
-import open3d as o3d
-import random
 
 # Paso 1: Crear puntos aleatorios
 num_puntos = 10
@@ -75,42 +69,7 @@ open3d_meshes = []
 def color_rgb():
     return [random.random() for _ in range(3)]
 
-for i, punto in enumerate(puntos):
-    x, y, z = punto
-    size = np.random.uniform(0.5, 1.5)
-    color = color_rgb()
-
-    forma = i % 3  # 0: esfera, 1: cubo, 2: cilindro
-
-    # === VEDO ===
-    if forma == 0:
-        obj_v = vedo.Sphere(pos=punto, r=size, c=color)
-        trimesh_obj = trimesh.creation.icosphere(radius=size)
-    elif forma == 1:
-        obj_v = vedo.Cube(pos=punto, side=size, c=color)
-        trimesh_obj = trimesh.creation.box(extents=[size]*3)
-    else:
-        obj_v = vedo.Cylinder(pos=punto, r=size/2, height=size*2, axis=(0,0,1), c=color)
-        trimesh_obj = trimesh.creation.cylinder(radius=size/2, height=size*2)
-
-    objetos_vedo.append(obj_v)
-
-    # === TRIMESH ===
-    trimesh_obj.visual.vertex_colors = (np.array(color) * 255).astype(np.uint8)
-    trimesh_obj.apply_translation(punto)
-    trimesh_objs.append(trimesh_obj)
-
-    # === OPEN3D ===
-    mesh_o3d = o3d.geometry.TriangleMesh(
-        vertices=o3d.utility.Vector3dVector(trimesh_obj.vertices),
-        triangles=o3d.utility.Vector3iVector(trimesh_obj.faces)
-    )
-    mesh_o3d.compute_vertex_normals()
-    mesh_o3d.paint_uniform_color(color)  # Pintar color uniforme
-    open3d_meshes.append(mesh_o3d)
-
 # === EXPORTACIÓN ===
-
 # vedo
 from vedo import merge
 merged = merge(objetos_vedo)
@@ -120,18 +79,16 @@ vedo.write(merged, "scene_vedo.gltf")  # .obj/.stl también válidos
 scene_trimesh = trimesh.Scene(trimesh_objs)
 scene_trimesh.export("scene_trimesh.glb")  # glTF soporta color
 
-# open3d
 scene_o3d = open3d_meshes[0]
 for m in open3d_meshes[1:]:
     scene_o3d += m
-o3d.io.write_triangle_mesh("scene
+o3d.io.write_triangle_mesh("scene_open3d.obj", scene_o3d) 
 ```
 --
 
 ## 📊 Resultados Visuales
 
-### 📌 Este taller **requiere explícitamente un GIF animado**:
-
+![escenas_p_python_munoz](https://github.com/user-attachments/assets/69a741a0-d889-4403-8376-945646261d0a)
 
 ---
 
@@ -139,7 +96,6 @@ o3d.io.write_triangle_mesh("scene
 
 ``text
 Generar un conjunto de figuras 3D aleatorias (esferas, cubos, cilindros) con colores aleatorios en diferentes posiciones del espacio 3D.
-
 ``
 ---
 
@@ -155,29 +111,34 @@ Generar un conjunto de figuras 3D aleatorias (esferas, cubos, cilindros) con col
 ### 🔹 Código relevante
 
 ```jsx
-// Visualización con rotación controlada
-objectsData.map((obj) => {
-  const finalRotation = [
-    obj.rotation[0],
-    rotationY, // Control global
-    obj.rotation[2],
-  ];
-  return (
-    <mesh key={obj.id} position={obj.position} rotation={finalRotation} scale={obj.scale * globalScale}>
-      {obj.type === 'box' && <boxGeometry args={[1, 1, 1]} />}
-      {obj.type === 'sphere' && <sphereGeometry args={[0.75, 32, 32]} />}
-      {obj.type === 'cylinder' && <cylinderGeometry args={[0.5, 0.5, 1.5, 32]} />}
-      <meshStandardMaterial color={overrideColor ? defaultColor : obj.color} />
-    </mesh>
-  );
-});
+ <Canvas camera={{ position: [5, 5, 5] }}>
+      <ambientLight />
+      <pointLight position={[10, 10, 10]} />
+      <OrbitControls />
+      {globalParams.showAll &&
+        objectsData.map((obj) => {
+          const scale = cubeParams.scale * obj.scale;
+          const rotationY = obj.rotationY * globalParams.rotationMultiplier;
+
+          return (
+            <mesh
+              key={obj.id}
+              position={obj.position}
+              rotation={[0, rotationY, 0]}
+              scale={scale}
+            >
+              <boxGeometry args={[1, 1, 1]} />
+              <meshStandardMaterial color={cubeParams.color || obj.color} />
+            </mesh>
+          );
+        })}
+    </Canvas>
 ```
 --
 
 ## 📊 Resultados Visuales
 
-### 📌 Este taller **requiere explícitamente un GIF animado**:
-
+![escenas_p_threejs_munoz](https://github.com/user-attachments/assets/b452ec2c-ccea-4345-b11a-d0214546661e)
 
 ---
 
@@ -204,7 +165,7 @@ Lo más desafiante fue manejar las transformaciones de las mallas en diferentes 
 
 - [x] Carpeta `2025-05-05_taller_escenas_parametricas`
 - [x] Código limpio y funcional
-- [x] GIF incluido con nombre descriptivo (si el taller lo requiere)
+- [x] GIF incluido con nombre descriptivo
 - [x] Visualizaciones o métricas exportadas
 - [x] README completo y claro
 - [x] Commits descriptivos en inglés
