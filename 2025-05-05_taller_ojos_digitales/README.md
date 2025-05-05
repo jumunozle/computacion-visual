@@ -1,4 +1,4 @@
-# 🧪 Taller de Filtros Convolucionales y Detección de Bordes en Imágenes
+# 🧪 Taller - Ojos digitales
 
 ## 📅 Fecha
 2025-05-03
@@ -27,26 +27,20 @@ Explorar y aplicar filtros convolucionales sobre imágenes en escala de grises p
 - Lenguaje: Python 3.x  
 - Entorno de desarrollo: Visual Studio Code con soporte Jupyter  
 - Librerías utilizadas:
-  - `opencv-python`
-  - `numpy`
-  - `matplotlib` (opcional)
+- `opencv-python`
+- `numpy`
+- `matplotlib` (opcional)
 
 ---
 
 ## 📁 Estructura del Proyecto
 
-
-2025-05-05_visualizador_3d/
-├── public/  
-│   └── model.obj  
-├── src/  
-│   ├── App.jsx  
-│   └── main.jsx  
-├── index.html  
-├── package.json  
+```
+2025-05-05_taler_ojos_digitales/
+├── python/
 ├── resultados/  
-│   └── captura.gif  
 ├── README.md  
+```
 
 ---
 
@@ -72,16 +66,13 @@ laplacian = cv2.Laplacian(imagen_gris, cv2.CV_64F, ksize=kernel_size)
 
 ## 📊 Resultados Visuales
 
-
-
+![ojos_digitales_python_munoz](https://github.com/user-attachments/assets/bb224933-64b4-43fe-a443-7123aa96a9fb)
 
 ---
 
 ## 🧩 Prompts Usados
 
 ```text
-“Python (Visual studio code con jupyter)”
-
 “Cargar una imagen a color y convertirla a escala de grises”
 
 “Aplicar filtros convolucionales simples (blur, sharpening)”
@@ -100,3 +91,17 @@ laplacian = cv2.Laplacian(imagen_gris, cv2.CV_64F, ksize=kernel_size)
 Este taller me permitió comprender de forma práctica cómo se aplican filtros convolucionales sobre imágenes y cómo se pueden ajustar sus parámetros para observar diferentes efectos visuales, especialmente al trabajar con bordes y realces.
 
 La parte más interesante fue la detección de bordes con Sobel y Laplaciano, especialmente al visualizar los resultados en tiempo real con sliders. En el futuro, podría aplicar estos conocimientos en preprocesamiento de imágenes para visión por computadora, y mejoraría la interfaz visual usando frameworks más completos como OpenCV GUI o integración con widgets de Jupyter.
+
+---
+
+
+## ✅ Checklist de Entrega
+
+- [x] Carpeta `2025-05-05_taller_ojos_digitales`
+- [x] Código limpio y funcional
+- [x] GIF incluido con nombre descriptivo (si el taller lo requiere)
+- [x] Visualizaciones o métricas exportadas
+- [x] README completo y claro
+- [x] Commits descriptivos en inglés
+
+---
