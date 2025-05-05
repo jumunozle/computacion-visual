@@ -34,12 +34,12 @@ Aplicar estructuras jerárquicas y árboles de transformación para organizar es
 ---
 
 ## 📁 Estructura del Proyecto
-
+```
 2025-05-05_taller_jerarquias_transformaciones/
 ├── threejs
 ├── resultados
 ├── README.md
-
+```
 ---
 
 ## 🧪 Implementación
