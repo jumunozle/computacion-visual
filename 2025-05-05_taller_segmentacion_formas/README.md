@@ -86,9 +86,9 @@ for cnt in contours:
 ## 📊 Resultados Visuales
 
 ```markdown
-![deteccion](/resultados/segmentacion_formas_munoz.gif)
-```
 
+```
+![segmentacion_formas_munoz](https://github.com/user-attachments/assets/f649ce24-e778-4b54-aac1-de7898acd6fe)
 ---
 
 ## 🧩 Prompts Usados
