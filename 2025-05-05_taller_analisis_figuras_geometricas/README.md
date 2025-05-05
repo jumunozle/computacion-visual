@@ -1,7 +1,7 @@
-# 🧪 Detección y Análisis de Contornos con OpenCV
+# 🧪 Analisis de figuras geometricas
 
 ## 📅 Fecha  
-2025-05-04 – Fecha de realización
+2025-05-05
 
 ---
 
@@ -31,12 +31,12 @@ Aplicar técnicas de procesamiento de imágenes en Python usando OpenCV para det
 ---
 
 ## 📁 Estructura del Proyecto
-2025-05-05_deteccion_contornos/
-├── entorno/ # colab/
-├── datos/ # imágenes (image.png)
-├── resultados/ # capturas de imagen con contornos
+```
+2025-05-05_taller_analisis_figuras_geometricas/
+├── python/
+├── resultados/ 
 ├── README.md
-
+```
 ---
 
 ## 🧪 Implementación
@@ -82,17 +82,13 @@ for i, cnt in enumerate(contours):
     cv2.putText(output, f"ID:{i+1}", (cx - 10, cy), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 1)
     print(f"Figura {i+1}: Área = {area:.2f}, Perímetro = {perimeter:.2f}, Centroide = ({cx}, {cy})")
 
-plt.imshow(cv2.cvtColor(output, cv2.COLOR_BGR2RGB))
-plt.axis('off')
-plt.show()
 ```
 
 ---
 
 ## 📊 Resultados Visuales
 
-### 📌 Este taller **requiere explícitamente un GIF animado**:
-
+![analisis_figuras_geometrias_munoz](https://github.com/user-attachments/assets/fbf897a1-1e05-4d51-b25c-a760a86f2099)
 
 ---
 
@@ -119,7 +115,7 @@ Lo más interesante fue ver cómo cada figura puede ser identificada, medida y e
 
 - [x] Carpeta `2025-05-05_taller_analisis_figuras_geometricas`
 - [x] Código limpio y funcional
-- [x] GIF incluido con nombre descriptivo (si el taller lo requiere)
+- [x] GIF incluido con nombre descriptivo
 - [x] Visualizaciones o métricas exportadas
 - [x] README completo y claro
 - [x] Commits descriptivos en inglés
