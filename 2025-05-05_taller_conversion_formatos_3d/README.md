@@ -1,4 +1,4 @@
-# 🧪 Importando el Mundo: Conversionn de formatos 3d
+# 🧪 Importando el Mundo: Conversion de formatos 3d
 
 ## 📅 Fecha
 2025-05-05
