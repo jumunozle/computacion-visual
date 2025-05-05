@@ -85,10 +85,9 @@ for cnt in contours:
 
 ## 📊 Resultados Visuales
 
-```markdown
-
-```
 ![segmentacion_formas_munoz](https://github.com/user-attachments/assets/f649ce24-e778-4b54-aac1-de7898acd6fe)
+https://colab.research.google.com/drive/1S6VLN0lnvKT-27qh--2O8cNb2vdT152f?usp=sharing
+
 ---
 
 ## 🧩 Prompts Usados
@@ -109,7 +108,7 @@ La parte más compleja fue ajustar correctamente los parámetros del umbral adap
 
 - [x] Carpeta `2025-05-05_taller_segmentacion_formas`
 - [x] Código limpio y funcional
-- [x] GIF incluido con nombre descriptivo (si el taller lo requiere)
+- [x] GIF incluido con nombre descriptivo 
 - [x] Visualizaciones o métricas exportadas
 - [x] README completo y claro
 - [x] Commits descriptivos en inglés
