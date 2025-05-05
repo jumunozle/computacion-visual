@@ -1,4 +1,4 @@
-# 🧪 Nombre del Taller
+# 🧪 Taller
 Transformaciones Jerárquicas con React Three Fiber
 
 ## 📅 Fecha
