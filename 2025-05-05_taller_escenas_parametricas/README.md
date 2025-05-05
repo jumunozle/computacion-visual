@@ -35,13 +35,13 @@ El objetivo de este taller es explorar la creación de figuras geométricas 3D (
 ---
 
 ## 📁 Estructura del Proyecto
-
+```
 2025-05-05_taller_escenas_parametricos/
 ├── python/
 ├── threejs/               
 ├── resultados/         
 ├── README.md
-
+```
 ---
 
 ## 🧪 Implementación Python
