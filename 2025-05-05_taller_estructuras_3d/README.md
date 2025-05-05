@@ -1,4 +1,4 @@
-# 🧪 Nombre del Taller
+# 🧪 Taller
 
 **Construyendo el mundo 3D**
 
@@ -36,11 +36,11 @@ Explorar la visualización dinámica de estructuras geométricas 3D mediante Rea
 - **Google Colab**
 - **Python 3**
 - **Bibliotecas:**
-  - `vedo`
-  - `trimesh`
-  - `imageio`
-  - `ipywidgets`
-  - `numpy`
+- `vedo`
+- `trimesh`
+- `imageio`
+- `ipywidgets`
+- `numpy`
 
 ---
 
@@ -49,7 +49,8 @@ Explorar la visualización dinámica de estructuras geométricas 3D mediante Rea
 ```
 2025-05-05_taller_estructuras_3d/
 ├── threejs/
-├── threejs/
+├── python/
+├── resultados/
 ├── README.md
 ```
 
@@ -80,8 +81,7 @@ Explorar la visualización dinámica de estructuras geométricas 3D mediante Rea
 
 ## 📊 Resultados Visuales
 
-
-
+![estructuras3d_threejs_munoz](https://github.com/user-attachments/assets/6f467495-4bda-4733-b10d-fda47abfdef0)
 
 ---
 
@@ -131,8 +131,7 @@ def generar_gif(nombre, objetos, n_frames=36):
 
 ## 📊 Resultados Visuales
 
-
-
+![estructuras3d_colab_munoz](https://github.com/user-attachments/assets/4cf30210-35d6-4021-8de7-ad2ec461dbb5)
 
 ---
 
