@@ -67,7 +67,7 @@ laplacian = cv2.Laplacian(imagen_gris, cv2.CV_64F, ksize=kernel_size)
 ## 📊 Resultados Visuales
 
 ![ojos_digitales_python_munoz](https://github.com/user-attachments/assets/bb224933-64b4-43fe-a443-7123aa96a9fb)
-
+No adjunto link de colab ya que no se puede usar alguna interfaz grafica, asi que es mejor abrir el notebook localmente
 ---
 
 ## 🧩 Prompts Usados
