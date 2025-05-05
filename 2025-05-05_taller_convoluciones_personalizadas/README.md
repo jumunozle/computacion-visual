@@ -74,7 +74,7 @@ corner_response = np.clip(np.abs(Ixy) / np.max(np.abs(Ixy)) * 255, 0, 255).astyp
 ## 📊 Resultados Visuales
 
 ![convoluciones_python_munoz](https://github.com/user-attachments/assets/e1b38f00-3dea-4c40-a658-d9acd7e5e593)
-
+https://colab.research.google.com/drive/1PLCZEsZMQaQn5_mbh_OqYva9DnufzRwL?usp=sharing
 ---
 
 ## 🧩 Prompts Usados
