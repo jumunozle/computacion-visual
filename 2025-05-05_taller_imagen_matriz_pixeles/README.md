@@ -67,6 +67,8 @@ H, S, V = cv2.split(image_hsv)
 
 ![taller_imagen_matriz_munoz](https://github.com/user-attachments/assets/b091ea1a-02e2-448a-b291-76f285d8ce6b)
 
+https://colab.research.google.com/drive/1mf8UUhu2GJmcvOorwBoVR_lO4GvBWT_U?usp=sharing
+
 ---
 
 ## 🧩 Prompts Usados

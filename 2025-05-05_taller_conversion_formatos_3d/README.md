@@ -72,6 +72,7 @@ mesh_gltf.export("convertido.stl")     # A STL
 ## 📊 Resultados Visuales
 
 ![conversion_3d_python_munoz](https://github.com/user-attachments/assets/eca6b065-bbbe-4d28-a5c1-af26b23c54de)
+https://colab.research.google.com/drive/1ScIPTjVmFYcaArVsYXnjsbh27fM4WQk2?usp=sharing
 
 ---
 

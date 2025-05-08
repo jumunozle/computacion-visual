@@ -159,6 +159,7 @@ def generar_gif(nombre, objetos, n_frames=36):
 
 ![estructuras3d_colab_munoz](https://github.com/user-attachments/assets/4cf30210-35d6-4021-8de7-ad2ec461dbb5)
 
+https://colab.research.google.com/drive/1A-sy9dDfe4Gxqs3xgqv-V_kahGNu5oVF?usp=sharing
 ---
 
 ## 🧩 Prompts Usados

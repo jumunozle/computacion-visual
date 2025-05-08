@@ -57,6 +57,8 @@ Explorar e implementar algoritmos clásicos de rasterización para generar gráf
 ![Triangulo](https://github.com/user-attachments/assets/b105364b-6e4e-49c6-9980-fb05251e7683)
 
 ![Figuras juntas](https://github.com/user-attachments/assets/f7e93fe5-d22c-4b11-9b09-5a4236222129)
+
+https://colab.research.google.com/drive/1duIBUSr5E4WPl2PvN4B7lZbeyrYY2L8I?usp=sharing
 ---
 
 ---
