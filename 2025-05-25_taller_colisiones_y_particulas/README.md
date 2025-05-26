@@ -67,6 +67,7 @@ const [ref] = useBox(() => ({
 ---
 ## 📊 Resultados Visuales
 
+![colisiones_y_particulas](https://github.com/user-attachments/assets/60b15ccc-e4b4-4038-89cf-8e41307a9c6d)
 
 ---
 
