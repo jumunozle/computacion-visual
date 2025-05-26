@@ -66,6 +66,9 @@ P = (I - K @ H) @ P_prior
 
 ## 📊 Resultados Visuales
 
+![grafico_resultado1](https://github.com/user-attachments/assets/17f227dd-8a6a-4dc9-a905-1dc53900a1c3)
+![grafico_resultado2](https://github.com/user-attachments/assets/c922b29c-78f8-4dcf-843d-af54ff3ac78a)
+![grafico_resultado3](https://github.com/user-attachments/assets/84da6102-7636-4892-b271-c2aed242f2a9)
 
 ---
 ## 🧩 Prompts Usados
