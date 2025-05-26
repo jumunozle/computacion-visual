@@ -98,6 +98,9 @@ if estado_gesto["dos_dedos"]:
 ---
 
 ## 📊 Resultados Visuales
+
+### Resultados en HD en carpeta resultados
+
 ![interfaces_multimodales_resultado1](https://github.com/user-attachments/assets/6eac899a-7c3b-44a8-aac4-236ea4f7e5a2)
 ![interfaces_multimodales_resultado2](https://github.com/user-attachments/assets/30b03d89-a903-4061-92d1-5c9a165d6c33)
 ![interfaces_multimodales_resultado3](https://github.com/user-attachments/assets/3ffae73a-39f7-4c1a-ba2a-a95c1c12ec3d)
