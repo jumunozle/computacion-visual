@@ -99,6 +99,14 @@ if estado_gesto["dos_dedos"]:
 
 ## 📊 Resultados Visuales
 
+### Resultados en HD en carpeta resultados
+
+![interfaces_multimodales_resultado1](https://github.com/user-attachments/assets/6eac899a-7c3b-44a8-aac4-236ea4f7e5a2)
+![interfaces_multimodales_resultado2](https://github.com/user-attachments/assets/30b03d89-a903-4061-92d1-5c9a165d6c33)
+![interfaces_multimodales_resultado3](https://github.com/user-attachments/assets/3ffae73a-39f7-4c1a-ba2a-a95c1c12ec3d)
+![interfaces_multimodales_resultado4](https://github.com/user-attachments/assets/8b094e35-c73e-4123-9bb1-b3667b46df4d)
+![interfaces_multimodales_resultado5](https://github.com/user-attachments/assets/048b0cc3-c49f-46c1-a2ca-38bc0d34e66e)
+![interfaces_multimodales_resultado6](https://github.com/user-attachments/assets/af2ea1a1-b7d8-4144-827d-c0afade8be8d)
 
 ---
 
