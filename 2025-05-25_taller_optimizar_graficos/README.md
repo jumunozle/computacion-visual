@@ -91,6 +91,17 @@ function createLOD(model) {
 ---
 ## 📊 Resultados Visuales
 
+## Aplicacion LOD
+![aplicacionLOD (1)](https://github.com/user-attachments/assets/6cb10566-340e-431b-bf7a-33d6f3463629)
+
+## Compresion de texturas
+![2025-05-26 18-29-19 (1)](https://github.com/user-attachments/assets/91d61397-336e-4a7d-8d14-c50baeef75fd)
+
+## Low Poly aplicado para no perder tanta calidad
+![2025-05-26 18-28-34 (1)](https://github.com/user-attachments/assets/4968a152-61c3-48d9-9f53-b85ab85ee918)
+
+## Low Poly aplicado para la mayor simplifacion posible
+![2025-05-26 18-28-12 (1)](https://github.com/user-attachments/assets/f9e7b004-7171-43f3-a1c3-98927e559d06)
 
 ---
 
