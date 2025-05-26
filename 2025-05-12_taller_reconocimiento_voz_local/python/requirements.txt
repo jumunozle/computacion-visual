@@ -1,0 +1,4 @@
+SpeechRecognition==3.8.1
+pyaudio
+pyttsx3
+pygame
