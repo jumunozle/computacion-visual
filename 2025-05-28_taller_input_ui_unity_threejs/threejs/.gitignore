@@ -1,0 +1,40 @@
+
+---
+
+## 🗂️ `.gitignore`
+
+Este es un `.gitignore` actualizado y apropiado para proyectos con **Node.js + Vite**:
+
+```gitignore
+# node
+node_modules/
+dist/
+.vite/
+.cache/
+
+# macOS
+.DS_Store
+
+# editor
+.vscode/
+.idea/
+
+# sistema
+Thumbs.db
+
+# entorno
+.env
+.env.*
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# producción
+*.zip
+*.tar.gz
+*.tgz
+
+# sistema operativo Linux
+*.swp
