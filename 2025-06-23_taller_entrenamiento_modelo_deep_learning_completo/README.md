@@ -68,6 +68,10 @@ optimizer = optim.Adam(model_ft.fc.parameters(), lr=1e-4)
 
 ## 📊 Resultados Visuales
 
+![confuision_matriz_resnet](https://github.com/user-attachments/assets/ea0e54e9-617c-4108-953a-5a20effaf2b0)
+![confusion_matrix](https://github.com/user-attachments/assets/9d4be0b4-1f2d-45e8-8a7f-d82fb1396dae)
+![curva_loss](https://github.com/user-attachments/assets/de77956c-d1c6-4a2a-ba85-74b0bc07d98f)
+![secuencial vs finetuning](https://github.com/user-attachments/assets/e582da28-b471-4eef-947c-66bc34086621)
 
 ---
 
