@@ -11,13 +11,13 @@ export default function App() {
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'ArrowRight') {
-        setCurrentAnim('mixamo.com');
+        setCurrentAnim('Take 001');
         setShowText(true); // mostrar texto mientras corre
       }
     };
 
     const handleKeyUp = () => {
-      setCurrentAnim('Take 001');
+      setCurrentAnim('mixamo.com');
       setShowText(false); // ocultar texto
     };
 
