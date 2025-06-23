@@ -69,7 +69,11 @@ elif (
 
 ## 📊 Resultados Visuales
 
+![testbrazosarriba](https://github.com/user-attachments/assets/aa40f1df-56f1-4ca6-9cf7-2064297c4a8c)
 
+![testsentado](https://github.com/user-attachments/assets/a0333eff-fa5a-4758-8e21-38998102e693)
+
+![testbrazoscruzados](https://github.com/user-attachments/assets/5906e63f-3244-4d7d-bc7a-f91626bfc867)
 
 ---
 
