@@ -56,7 +56,7 @@ Aprender a integrar avatares 3D en entornos interactivos utilizando Unity y Thre
 
 ## 📊 Resultados Visuales
 
-
+![avatarunity](https://github.com/user-attachments/assets/2182d37f-bf14-445e-9c70-85a5f4a25ee5)
 
 ---
 
@@ -93,6 +93,7 @@ useEffect(() => {
 
 ## 📊 Resultados Visuales
 
+![avatarthreejs](https://github.com/user-attachments/assets/eaf0b0fa-8de2-49b8-8eed-f2a27b3d098d)
 
 ---
 
