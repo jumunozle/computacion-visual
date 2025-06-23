@@ -91,7 +91,7 @@ elif (
 
 Este taller me permitió reforzar el uso de MediaPipe para interpretar acciones humanas simples a partir de la postura corporal. Aprendí cómo trabajar con coordenadas relativas del cuerpo y cómo transformarlas en reglas lógicas que definen comportamientos reconocibles.
 
-La acción más fácil de detectar fue “¡Brazos arriba!”, ya que su condición es muy clara (muñecas por encima de la nariz). La más sensible a errores fue “Brazos cruzados”, ya que puede generar falsos positivos si la persona junta las manos al centro sin cruzarlas realmente, el sistema también se confunde si hay movimiento o poses ambiguas.
+La acción más fácil de detectar fue “¡Brazos arriba!”, ya que su condición es muy clara (muñecas por encima de la nariz). La más sensible a errores fue “Brazos cruzados”, ya que puede generar falsos positivos si la persona junta las manos al centro sin cruzarlas realmente, el sistema también se confunde si hay movimiento o poses ambiguas. Tambien intente agregar la accion caminando pero el sistema se confundia mucho con cualquier accion que hacia.
 
 ---
 
