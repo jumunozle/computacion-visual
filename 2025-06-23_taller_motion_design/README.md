@@ -104,7 +104,10 @@ Jump.fbx: salto con anticipación y caída.
 
 ## 📊 Resultados Visuales
 
+![teclanim](https://github.com/user-attachments/assets/8e5f5d56-a691-44e3-800c-97b9e9373da7)
 
+![botonesanim](https://github.com/user-attachments/assets/a79f325f-b272-49b3-8347-50c17a2f509e)
+**Con la tecla espacio el personaje salta y con la tecla r el personaje corre**
 ---
 
 ## 💬 Reflexión Final
