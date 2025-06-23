@@ -132,6 +132,9 @@ ret, _, _, _, _, R, T, E, F = cv2.stereoCalibrate(
 ---
 
 ## 📊 Resultados Visuales
+![parte1](https://github.com/user-attachments/assets/643e9676-1983-486d-a45d-5bd3850cda20)
+![recparte2](https://github.com/user-attachments/assets/6d687080-a87c-43b3-85cc-dff19acc79a6)
+![comparacionparte1](https://github.com/user-attachments/assets/f11d310a-1a25-4049-bca1-e831047d3e54)
 
 ---
 
