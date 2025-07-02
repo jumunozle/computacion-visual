@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AR.js Custom Marker</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/ar.js/2.3.1/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs="sourceType: webcam;">
+      
+      <!-- Tu marcador personalizado -->
+      <a-marker type="pattern" url="markers/marcador.patt">
+        <!-- Modelo 3D -->
+        <a-entity gltf-model="models/modelo.glb"
+                  scale="0.5 0.5 0.5"
+                  position="0 0 0"
+                  rotation="0 180 0"
+                  animation="property: rotation; to: 0 360 0; loop: true; dur: 4000;">
+        </a-entity>
+      </a-marker>
+
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>

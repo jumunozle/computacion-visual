@@ -239,4 +239,22 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
+# Ignorar archivos de la cache del PackageManager de Unity
+[Ll]ibrary/
+[Tt]emp/
+[Bb]uild/
+[Bb]uilds/
+obj/
+*.csproj
+*.unityproj
+*.sln
+*.user
+*.pidb
+*.booproj
+*.svd
+
+# Ignorar paquetes y dependencias temporales
+Packages/com.unity.*
+
+
 # End of https://www.toptal.com/developers/gitignore/api/node,unity,jupyternotebooks,processing
